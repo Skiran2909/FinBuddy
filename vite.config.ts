@@ -25,7 +25,7 @@
 
 
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-
+// export default defineConfig({});
 // export default defineConfig({
 //   tanstackStart: {
 //     server: {
@@ -34,4 +34,8 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 //   },
 // });
 
-export default defineConfig({});
+export default defineConfig({
+  nitro: {
+    preset: "node-server",
+  },
+});
